@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkg_app2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadisticasNacionales">
+
+    <TextView
+        android:id="@+id/tv_tituloEm"
+        android:layout_width="360dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/estadisticas_mundiales"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloDosEm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/informaci_n_covid_19_a_nivel_mundial"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloEm" />
+
+    <TextView
+        android:id="@+id/tvTotalConfirmed"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/total_confirmados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloDosEm" />
+
+    <TextView
+        android:id="@+id/tvShowTotalConfirmed"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalConfirmed"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloDosEm" />
+
+    <TextView
+        android:id="@+id/tvTotalDeaths"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/total_de_muertes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalConfirmed" />
+
+    <TextView
+        android:id="@+id/tvShowTotalDeaths"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalDeaths"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowTotalConfirmed" />
+
+    <TextView
+        android:id="@+id/tvTotalRecovered"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/total_de_recuperados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalDeaths" />
+
+    <TextView
+        android:id="@+id/tvShowTotalRecovered"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalRecovered"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowTotalDeaths" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="347dp"
+        android:layout_height="422dp"
+        app:layout_constraintBottom_toTopOf="@+id/en_btnsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowTotalRecovered"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/en_btnsalir"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/salir"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

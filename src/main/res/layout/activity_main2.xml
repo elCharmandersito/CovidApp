@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkg_app2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadisticasMundiales">
+
+    <TextView
+        android:id="@+id/tv_tituloEm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/estadisticas_mundiales"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_titulo2_Em"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/seleccione_un_pais"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloEm" />
+
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/elija_un_pais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo2_Em" />
+
+    <Spinner
+        android:id="@+id/spinnerCountries"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/tv_countryName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo2_Em" />
+
+    <TextView
+        android:id="@+id/tv_totalConfirmed"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/confirmados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_countryName" />
+
+    <TextView
+        android:id="@+id/tv_ShowTotalConfirmed"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_totalConfirmed"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCountries" />
+
+    <TextView
+        android:id="@+id/tv_totalDeaths"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/muertes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalConfirmed" />
+
+    <TextView
+        android:id="@+id/tv_ShowTotalDeaths"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_totalDeaths"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShowTotalConfirmed" />
+
+    <TextView
+        android:id="@+id/tv_totalRecovered"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/recuperados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_totalDeaths" />
+
+    <TextView
+        android:id="@+id/tv_ShowTotalRecovered"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_totalRecovered"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ShowTotalDeaths" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="361dp"
+        android:layout_height="251dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/en_btnsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/en_btnsalir"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/salir"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

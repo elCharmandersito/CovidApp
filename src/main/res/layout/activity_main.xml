@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkg_app2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainActivity">
+
+    <TextView
+        android:id="@+id/tvAppTitule"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/estatus_covid_19"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn1_estadisticasMundiales"
+        android:layout_width="277dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/estadisticas_mundiales"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2_estadisticasNacionales"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2_estadisticasNacionales"
+        android:layout_width="277dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/estadisticas_nacionales"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppTitule"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn3_estadisticasRegionales"
+        android:layout_width="277dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/estadisticas_regionales"
+        android:textSize="28sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1_estadisticasMundiales"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/aboutApp"
+        android:layout_width="277dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/sobre_mi"
+        android:textSize="28sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3_estadisticasRegionales"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

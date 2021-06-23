@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/cerblebkg">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/image"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="@string/aplicaci_n_desarrollada_por"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patricio_parra_soto"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/userImage"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estudiante_ingenier_a_civil_inform_tica"
+        android:textSize="18sp"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"/>
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/universidad_del_b_o_b_o_chill_n"
+        android:textSize="18sp"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"/>
+
+
+
+</RelativeLayout>

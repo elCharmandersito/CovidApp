@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bkg_app2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstadisticasRegionales">
+
+    <TextView
+        android:id="@+id/tv_EstadisticasRegionales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/estadisticas_regionales_de_chile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvElijaUnaRegion"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/elija_una_regi_n"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EstadisticasRegionales" />
+
+    <Spinner
+        android:id="@+id/spinnerRegiones"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/tvElijaUnaRegion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EstadisticasRegionales" />
+
+    <TextView
+        android:id="@+id/tv_NombreRegion"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nombre_regi_n"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvElijaUnaRegion" />
+
+    <TextView
+        android:id="@+id/tv_RegionName"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toEndOf="@+id/tv_NombreRegion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRegiones" />
+
+    <TextView
+        android:id="@+id/tv_Confirmados"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/confirmados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_NombreRegion" />
+
+    <TextView
+        android:id="@+id/tv_RegionConfirmed"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/tv_Confirmados"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RegionName" />
+
+    <TextView
+        android:id="@+id/tv_Muertes"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/muertes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Confirmados" />
+
+    <TextView
+        android:id="@+id/tv_RegionDeaths"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tv_Muertes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RegionConfirmed" />
+
+    <TextView
+        android:id="@+id/tv_RegionRecovered"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tv_Recuperados"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RegionDeaths" />
+
+    <TextView
+        android:id="@+id/tv_RegionActive"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tv_Activos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RegionRecovered" />
+
+    <TextView
+        android:id="@+id/tv_Recuperados"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/recuperados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Muertes" />
+
+    <TextView
+        android:id="@+id/tv_Activos"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/activos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Recuperados" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="342dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintBottom_toTopOf="@+id/en_btnsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EstadisticasRegionales"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/en_btnsalir"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/personal01"
+        android:onClick="onClick"
+        android:text="@string/salir"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

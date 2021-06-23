@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="salir">salir</string>
+    <string name="estadisticas_nacionales">ESTADISTICAS NACIONALES</string>
+    <string name="estadisticas_mundiales">ESTADISTICAS MUNDIALES</string>
+    <string name="estadisticas_regionales">ESTADISTICAS REGIONALES</string>
+    <string name="estatus_covid_19">Estatus covid-19</string>
+    <string name="seleccione_un_pais">Seleccione un Pais</string>
+    <string name="elija_un_pais">Elija un Pais</string>
+    <string name="estadisticas_regionales_de_chile">Estadisticas Regionales de Chile</string>
+    <string name="elija_una_regi_n">Elija una Región</string>
+    <string name="nombre_regi_n">Nombre Región</string>
+    <string name="confirmados">Confirmados</string>
+    <string name="muertes">Muertes</string>
+    <string name="app_name">Estatus Covid-19</string>
+    <string name="recuperados">Recuperados</string>
+    <string name="activos">Activos</string>
+    <string name="muertos">Muertos</string>
+    <string name="informaci_n_covid_19_a_nivel_mundial">Información Covid-19 a nivel mundial</string>
+    <string name="casos_confirmados">Casos Confirmados</string>
+    <string name="total_recuperados">Total Recuperados</string>
+    <string name="total_casos_activos">Total Casos Activos</string>
+    <string name="nuevos_confirmados">Nuevos Confirmados</string>
+    <string name="nuevos_recuperados">Nuevos Recuperados</string>
+    <string name="total_confirmados">Total Confirmados</string>
+    <string name="muertes_nuevas">Muertes Nuevas</string>
+    <string name="total_de_recuperados">total de recuperados</string>
+    <string name="total_de_muertes">total de muertes</string>
+    <string name="nombre_pais">Nombre Pais</string>
+    <string name="sobre_mi">SOBRE MI</string>
+    <string name="patricio_parra_soto">Patricio Parra Soto</string>
+    <string name="estudiante_ingenier_a_civil_inform_tica">Estudiante Ingeniería Civil Informática</string>
+    <string name="universidad_del_b_o_b_o_chill_n">Universidad del Bío-Bío, Chillán</string>
+    <string name="todo">TODO</string>
+    <string name="aplicaci_n_desarrollada_por">Aplicación desarrollada por</string>
+</resources>
